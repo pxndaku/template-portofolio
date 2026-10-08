@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bengil — UI/UX Designer & Frontend Developer</title>
+  <meta name="description" content="Portfolio of Bengil, UI/UX designer and frontend developer.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">B<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="hero-greet">Hi, I'm</p>
+      <h1 class="hero-name">Bengil</h1>
+      <h2 class="hero-role"><span id="typedRole"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">I design clean, user-friendly interfaces and turn them into fast, responsive websites.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">🐙</a>
+        <a href="#" aria-label="Dribbble">🏀</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo"><span>B</span></div>
+        <div>
+          <p>I'm a designer-developer hybrid based in Indonesia. I love turning complex problems into simple, beautiful interfaces — then bringing them to life with clean code.</p>
+          <ul class="about-info">
+            <li><strong>📍 Location:</strong> Lombok, Indonesia</li>
+            <li><strong>📧 Email:</strong> hello@example.com</li>
+            <li><strong>💼 Status:</strong> <span class="badge-open">Open for freelance</span></li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid grid-3" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A selection of my recent work.</p>
+      <div class="chips" id="projectFilters"></div>
+      <div class="grid grid-3" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container narrow">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 — Present</div>
+          <h3>Freelance UI/UX Designer</h3>
+          <p>Designing landing pages, mobile apps, and design systems for clients across Indonesia.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 — 2024</div>
+          <h3>Frontend Developer — Studio Kreatif</h3>
+          <p>Built responsive websites with HTML, CSS, and JavaScript. Collaborated with designers in Figma.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 — 2023</div>
+          <h3>Information Systems Student</h3>
+          <p>Started the journey — coursework in web development, databases, and HCI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="grid grid-3">
+        <div class="card testi"><p>"Bengil delivered beyond expectations. Clean design, fast turnaround."</p><strong>— Client A, Startup Founder</strong></div>
+        <div class="card testi"><p>"Great communication and a real eye for detail. Highly recommended."</p><strong>— Client B, Product Manager</strong></div>
+        <div class="card testi"><p>"Our landing page conversion doubled after the redesign."</p><strong>— Client C, Marketing Lead</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container narrow">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Have a project in mind? Let's talk.</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="cfName" placeholder="Your name" required>
+        <input type="email" id="cfEmail" placeholder="Your email" required>
+        <textarea id="cfMsg" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+      <p class="contact-alt">Prefer email? <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">B<span class="logo-dot">.</span></a>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">🐙</a>
+        <a href="#" aria-label="Dribbble">🏀</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+      <p>© <span id="year"></span> Bengil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
