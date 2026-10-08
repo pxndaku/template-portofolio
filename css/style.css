@@ -71,8 +71,19 @@ body {
 /* ---------- Hero ---------- */
 .hero {
   min-height: 88vh; display: flex; align-items: center; justify-content: center;
-  text-align: center; position: relative; padding: 60px 0;
-  background: radial-gradient(600px 300px at 50% 20%, rgba(99,102,241,.12), transparent);
+  text-align: center; position: relative; padding: 60px 0; overflow: hidden;
+  background:
+    radial-gradient(600px 340px at 12% 18%, rgba(99,102,241,.18), transparent 60%),
+    radial-gradient(520px 320px at 88% 28%, rgba(167,139,250,.16), transparent 60%),
+    radial-gradient(480px 300px at 50% 95%, rgba(245,158,11,.12), transparent 60%),
+    radial-gradient(rgba(99,102,241,.12) 1.2px, transparent 1.2px);
+  background-size: auto, auto, auto, 30px 30px;
+}
+.hero-badge {
+  display: inline-block; font-size: .85rem; font-weight: 600;
+  color: var(--primary); background: rgba(99,102,241,.1);
+  border: 1px solid rgba(99,102,241,.28);
+  padding: 7px 20px; border-radius: 999px; margin-bottom: 20px;
 }
 .hero-greet { color: var(--primary); font-weight: 600; font-size: 1.1rem; margin-bottom: 6px; }
 .hero-name { font-size: 3.4rem; line-height: 1.15; letter-spacing: -1px; }
